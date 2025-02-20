@@ -13,9 +13,9 @@ function LETS_PLAY {
     then
         INSERT_NEW_USER=$($PSQL "INSERT INTO users (user_name) VALUES ('$NAME')")
         USER_EXISTS=$($PSQL "SELECT user_name FROM users WHERE user_name = '$NAME'")
-        echo Your account has been successfully created! $NAME.
+        echo Welcome, $NAME! It looks like this is your first time here.
     else
-        echo Welcome, $NAME
+        echo Welcome back, $NAME! You have played <games_played> games, and your best game took <best_game> guesses.
     fi
 }
 
