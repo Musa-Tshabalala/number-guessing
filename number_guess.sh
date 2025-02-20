@@ -1,8 +1,7 @@
 #!/bin/bash
 
-export PGPASSWORD="M722319355m"
 
-PSQL="psql --username=musa_tshabalala dbname=number_guess --no-align -t -c"
+PSQL="psql --username=freecodecamp dbname=number_guess --no-align -t -c"
 
 function LETS_PLAY {
     echo Enter your username:
