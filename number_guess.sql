@@ -49,7 +49,9 @@ SET default_table_access_method = heap;
 
 CREATE TABLE public.users (
     user_id integer NOT NULL,
-    user_name character varying(22) NOT NULL
+    user_name character varying(22) NOT NULL,
+    games_played integer,
+    best_game integer
 );
 
 
@@ -88,13 +90,15 @@ ALTER TABLE ONLY public.users ALTER COLUMN user_id SET DEFAULT nextval('public.u
 -- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: freecodecamp
 --
 
+INSERT INTO public.users VALUES (7, 'user_1740099717329', 2, 440);
+INSERT INTO public.users VALUES (6, 'user_1740099717330', 5, 53);
 
 
 --
 -- Name: users_user_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.users_user_id_seq', 1, false);
+SELECT pg_catalog.setval('public.users_user_id_seq', 7, true);
 
 
 --
