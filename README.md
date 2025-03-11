@@ -14,7 +14,10 @@ psql -U postgres < number_guess.sql
 2. DB_NAME=number_guess
 3. PGPASSWORD=<'YourPsqlPassword'>
 4. PORT=5432
+<<<<<<< HEAD
 5. HOST=localhost
+=======
+>>>>>>> 2b112f1 (feat- Much more feats added)
 
 ## Make your sh file executable
 
